@@ -147,17 +147,3 @@ void lru(int referenceString[], int n, int capacity)
 
     printf("Number of page faults: %d\n", pageFaults);
 }
-
-
-
-
-
-        {
-            frames[frameIndex] = referenceString[i];
-            frameIndex = (frameIndex + 1) % capacity;
-            pageFaults++;
-        }
-    }
-
-    printf("Number of page faults: %d\n", pageFaults);
-}
